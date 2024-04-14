@@ -1,6 +1,36 @@
-# Welcome to Remix + Vite!
+# TODOs and Takeaways
+### TODO
+1. Setup the API for the lambdas
+1. Make the cards links and style cards based on if they have been collected
+1. Add error handling everywhere
+1. Rework how the Regions are stored. Should look like:
+```
+{
+    region: "South Africa",
+    collected: True
+}
+```
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
+### Takeaways
+1. I wanted to get some practice working with SST and Remix and I have a better understanding of both now.
+1. I would have gotten more done working with a more familiar tech stack (React & Terraform or CDK), but that's the tradeoff.
+1. I should have forseen the data structure issue. Don't make the important data the key in an object.
+
+# Setup
+[Export AWS credentials to your terminal](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+Build:
+```
+npx remix vite:build
+npx remix-serve build/server/index.js
+```
+
+Run the frontend:
+```
+npm run dev
+```
+
+http://localhost:5173
 
 ## Development
 

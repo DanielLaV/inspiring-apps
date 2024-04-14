@@ -1,0 +1,65 @@
+:root {
+    --color-foreground: hsl(0, 0%, 0%);
+    --color-background: hsl(315, 83%, 61%);
+    --color-primary: hsl(230, 100%, 50%);
+    --color-primary-light: hsl(230, 100%, 60%);
+    --color-primary-dark: hsl(230, 100%, 40%);
+    --color-gray-dark: hsl(0, 0%, 60%);
+    --color-gray-light: hsl(0, 0%, 90%);
+    --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
+      Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body {
+    font-family: var(--font-body);
+    line-height: 1.5;
+  }
+
+  a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+  }
+
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-gap: 16px;
+  }
+
+  li {
+    padding-top: 56.25%;
+    background: #303035;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  li > img {
+    position: absolute;
+    width: 100%;
+  }
